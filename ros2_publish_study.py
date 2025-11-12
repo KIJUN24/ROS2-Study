@@ -39,6 +39,7 @@ class PublisherStudy(Node):
 # 실제 코드가 돌아가는 main 함수
 def main(args=None):
     # ros2를 사용하기 위함.
+    # ROS2 시스템 초기화.
     rclpy.init(args=args)
     # 변수에 PublisherStudy() 클래스 대입
     publisher_study = PublisherStudy()
@@ -52,6 +53,7 @@ def main(args=None):
     # ROS2 관련 리소스들 Clean up
     # 안전하게 종료하기 위함.
     publisher_study.destroy_node()
+    # ROS2 전체 종료
     rclpy.shutdown()
 
 # 이 파일이 직접 실행될 때만 main() 함수를 실행시켜라.
