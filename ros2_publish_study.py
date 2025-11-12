@@ -47,8 +47,8 @@ def main(args=None):
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
- 
     # when the garbage collector destroys the node object)
+    
     # ROS2 관련 리소스들 Clean up
     # 안전하게 종료하기 위함.
     publisher_study.destroy_node()
